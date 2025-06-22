@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mousey Brand</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-10">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <div class="text-2xl font-bold">Mousey Brand</div>
+      <nav class="space-x-6 text-lg font-medium">
+        <a href="#about" class="hover:text-blue-600 transition">About</a>
+        <a href="#services" class="hover:text-blue-600 transition">Services</a>
+        <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="about" class="flex-grow flex flex-col justify-center items-center text-center p-10 bg-gradient-to-r from-blue-400 to-indigo-600 text-white">
+    <h1 class="text-5xl font-extrabold mb-4">Welcome to Mousey Brand</h1>
+    <p class="max-w-3xl text-xl mb-8">
+      At Mousey Brand, we craft high-quality digital experiences tailored to your needs.<br />
+      Join us and let’s build something amazing together.
+    </p>
+    <a href="#contact" class="px-6 py-3 bg-white text-indigo-600 font-semibold rounded-lg shadow hover:bg-gray-100 transition">
+      Get In Touch
+    </a>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-white max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-10 text-center">Our Services</h2>
+    <div class="grid gap-10 md:grid-cols-3">
+      <div class="p-6 border rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+        <p>Modern, responsive websites built to help you grow your online presence.</p>
+      </div>
+      <div class="p-6 border rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Brand Strategy</h3>
+        <p>Comprehensive strategies to build your unique brand identity.</p>
+      </div>
+      <div class="p-6 border rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Consulting</h3>
+        <p>Expert advice to help you solve challenges and optimize your projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gray-100 max-w-3xl mx-auto px-6 rounded-lg">
+    <h2 class="text-3xl font-bold mb-6 text-center">Contact Us</h2>
+    <form class="flex flex-col gap-4" onsubmit="event.preventDefault(); alert('Thanks for reaching out!');">
+      <input type="text" placeholder="Your Name" required class="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+      <input type="email" placeholder="Your Email" required class="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+      <textarea rows="4" placeholder="Your Message" required class="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+      <button type="submit" class="self-center px-8 py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center p-6 mt-16 border-t">
+    <p>&copy; 2025 Mousey Brand. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
